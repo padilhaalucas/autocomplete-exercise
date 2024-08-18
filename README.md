@@ -84,16 +84,16 @@ ___
 - `src/services/mockedApi/index.ts`: Asynchronous function for fetching suggestions
 ___
 ## Design Decisions and Notes
-1. Performance optimization: Debounce is used to limit API calls and improve performance.
-2. No external libraries: As per requirements, only pure React and internal DOM functions are used.
-3. TypeScript: Proper interfaces and types are used throughout the project.
-4. Asynchronous filtering: The `fetchSuggestions` function in `mockedApi` simulates an asynchronous API call.
-5. CSS: Basic styling is applied to ensure functionality and readability.
-6. Edge cases: The component handles various scenarios like no results, loading states, and keyboard navigation.
-7. Text highlighting: Matching parts of the text are highlighted in the suggestions.
-8. State management: Only native React state management is used (no external libraries).
-9. Functional components: All components are functional and use React hooks.
-10. Real API usage: Using the free api (https://restcountries.com/v3.1) to receive real data when typing.
+1. **Performance optimization:** Debounce is used to limit API calls and improve performance.
+2. **No external libraries:** As per requirements, only pure React and internal DOM functions are used.
+3. **TypeScript:** Proper interfaces and types are used throughout the project.
+4. **Asynchronous filtering:** The `fetchSuggestions` function in `mockedApi` simulates an asynchronous API call.
+5. **CSS:** Basic styling is applied to ensure functionality and readability.
+6. **Edge cases:** The component handles various scenarios like no results, loading states, and keyboard navigation.
+7. **Text highlighting:** Matching parts of the text are highlighted in the suggestions.
+8. **State management:** Only native React state management is used (no external libraries).
+9. **Functional components:** All components are functional and use React hooks.
+10. **Real API usage:** Using the free api (https://restcountries.com/v3.1) to receive real data when typing.
 
 ## 📬 Contact
 📧 lucas@padilha.io <br>
