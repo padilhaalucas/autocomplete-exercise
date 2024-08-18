@@ -46,11 +46,8 @@ ___
 ├── package.json
 ├── pnpm-lock.yaml
 ├── public
-├── README.md
+│   └── deel-logo.svg
 ├── src
-│   ├── App.css
-│   ├── App.test.tsx
-│   ├── App.tsx
 │   ├── components
 │   │   └── AutoComplete
 │   │       ├── index.css
@@ -61,8 +58,6 @@ ___
 │   │   └── useDebounce
 │   │       ├── index.test.ts
 │   │       └── index.ts
-│   ├── index.css
-│   ├── main.tsx
 │   ├── services
 │   │   ├── index.ts
 │   │   └── mockedApi
@@ -70,7 +65,20 @@ ___
 │   │       └── index.ts
 │   ├── types
 │   │   └── index.ts
+│   ├── App.css
+│   ├── App.test.tsx
+│   ├── App.tsx
+│   ├── index.css
+│   ├── main.tsx
 │   └── vite-env.d.ts
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── jest.config.ts
+├── jest.setup.ts
+├── package.json
+├── pnpm-lock.yaml
+├── README.md
 ├── tsconfig.app.json
 ├── tsconfig.jest.json
 ├── tsconfig.json
