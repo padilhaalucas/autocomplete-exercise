@@ -76,9 +76,12 @@ const Autocomplete = ({ placeholder = 'Search...' }: AutocompleteProps) => {
 
   const highlightMatch = useCallback((text: string, query: string) => {
     if (query?.length > 0) {
-      const regex = new RegExp(`(${query})`, 'gi');
+      // Escape special characters in the query string (since I've implemented the flag)
+      const escapedQuery = query.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+      const regex = new RegExp(`(${escapedQuery})`, 'gi');
+
       return text.split(regex).map((part, index) =>
-        regex?.test(part) ? <mark key={index}>{part}</mark> : part
+        regex.test(part) ? <mark key={index}>{part}</mark> : part
       );
     }
 
