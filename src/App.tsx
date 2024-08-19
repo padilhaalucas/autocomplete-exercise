@@ -11,7 +11,7 @@ const App = () => {
       </header>
       <main>
         <section className="autocomplete-section">
-          <Autocomplete />
+          <Autocomplete placeholder="Start typing... eg.: British Pound" />
         </section>
       </main>
     </div>
